@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/titleAdd"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Product" />
+
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/titleAdd"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:drawableTint="@color/blue"
+        android:hint="  Product Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/red"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/addName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawableTint="@color/blue"
+        android:hint="  Price"
+        android:textColor="@color/black"
+        android:textColorHint="@color/red"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addPromo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/addPrice"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/checkbox_off_background"
+        android:hint="  Promo"
+        android:textColor="@color/black"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:drawableTint="@color/blue"/>
+
+    <EditText
+        android:id="@+id/addDesc"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/addPromo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        android:hint="  Description"
+        android:textColor="@color/black"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:drawableTint="@color/blue"/>
+
+    <EditText
+        android:id="@+id/addImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/addDesc"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        android:hint="  Image URL"
+        android:textColor="@color/black"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:drawableTint="@color/blue"/>
+
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_below="@+id/addImage"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <Button android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/border_style"
+                android:id="@+id/btnAdd"
+                android:drawableRight="@android:drawable/ic_input_add"
+                android:drawableTint="@color/white"
+                android:text="Add\nProduct"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/addImage"
+                android:backgroundTint="@color/green"
+                android:textSize="12sp"/>
+
+            <Button android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="65dp"
+                android:background="@drawable/border_style"
+                android:id="@+id/btnBack"
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:drawableTint="@color/white"
+                android:text="PRODUCT\nLIST"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@id/addImage"
+                android:backgroundTint="@color/green"
+                android:textSize="12sp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
